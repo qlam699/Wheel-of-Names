@@ -21,7 +21,7 @@ body {
 .wheel-container {
     position: relative;
     width: 100%;
-    max-width: 600px;
+    max-width: 800px; /* Tăng từ 600px lên 800px */
     aspect-ratio: 1 / 1;
 }
 
@@ -35,8 +35,8 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 50px;
-    height: 50px;
+    width: 80px; /* Tăng từ 50px lên 80px */
+    height: 80px; /* Tăng từ 50px lên 80px */
     border-radius: 50%;
     background-color: #333;
     color: white;
@@ -44,20 +44,20 @@ body {
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 18px; /* Tăng từ 14px lên 18px */
 }
 
 #spinner::after {
     content: '';
     position: absolute;
     top: 50%;
-    right: -18px;
+    right: -28px; /* Điều chỉnh vị trí */
     transform: translateY(-50%);
     width: 0;
     height: 0;
-    border-top: 8px solid transparent;
-    border-bottom: 8px solid transparent;
-    border-left: 20px solid #333;
+    border-top: 14px solid transparent; /* Tăng kích thước */
+    border-bottom: 14px solid transparent; /* Tăng kích thước */
+    border-left: 32px solid #333; /* Tăng kích thước */
 }
 
 .input-container {
@@ -70,7 +70,7 @@ body {
 
 #nameInput {
     width: 100%;
-    min-height: 150px;
+    min-height: 300px;
     resize: vertical;
 }
 
@@ -100,7 +100,7 @@ button:hover {
     }
 
     .wheel-container {
-        flex: 1;
+        flex: 2; /* Tăng tỷ lệ */
     }
 
     .input-container {

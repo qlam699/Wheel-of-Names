@@ -34,8 +34,8 @@ function drawWheel() {
         ctx.rotate(angle + arc / 2);
         ctx.textAlign = 'right';
         ctx.fillStyle = '#fff';
-        ctx.font = 'bold 18px Arial';
-        ctx.fillText(names[i], radius - 10, 10);
+        ctx.font = 'bold 18px Arial'; // Tăng kích thước font từ 18px lên 24px
+        ctx.fillText(names[i], radius - 20, 10); // Điều chỉnh vị trí văn bản
         ctx.restore();
     }
 }
